@@ -1,6 +1,6 @@
 //
 //  HGRefreshFooterView.swift
-//  TigerWit
+//  HGRefresh
 //
 //  Created by BaoGh on 2021/1/21.
 //
