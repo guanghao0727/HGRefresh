@@ -13,6 +13,10 @@
 		8B54DBE12656587300DFF12E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B54DBDF2656587300DFF12E /* Main.storyboard */; };
 		8B54DBE32656587600DFF12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B54DBE22656587600DFF12E /* Assets.xcassets */; };
 		8B54DBE62656587600DFF12E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B54DBE42656587600DFF12E /* LaunchScreen.storyboard */; };
+		8B54DBF32656594D00DFF12E /* HGRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54DBEE2656594D00DFF12E /* HGRefreshBaseView.swift */; };
+		8B54DBF42656594D00DFF12E /* HGRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54DBEF2656594D00DFF12E /* HGRefreshFooterView.swift */; };
+		8B54DBF52656594D00DFF12E /* UIScrollView+HGRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54DBF02656594D00DFF12E /* UIScrollView+HGRefresh.swift */; };
+		8B54DBF62656594D00DFF12E /* HGRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54DBF12656594D00DFF12E /* HGRefreshHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8B54DBE22656587600DFF12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B54DBE52656587600DFF12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B54DBE72656587600DFF12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B54DBEE2656594D00DFF12E /* HGRefreshBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGRefreshBaseView.swift; sourceTree = "<group>"; };
+		8B54DBEF2656594D00DFF12E /* HGRefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGRefreshFooterView.swift; sourceTree = "<group>"; };
+		8B54DBF02656594D00DFF12E /* UIScrollView+HGRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+HGRefresh.swift"; sourceTree = "<group>"; };
+		8B54DBF12656594D00DFF12E /* HGRefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGRefreshHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		8B54DBD82656587300DFF12E /* HGRefreshExample */ = {
 			isa = PBXGroup;
 			children = (
+				8B54DBED2656594D00DFF12E /* HGRefresh */,
 				8B54DBD92656587300DFF12E /* AppDelegate.swift */,
 				8B54DBDB2656587300DFF12E /* SceneDelegate.swift */,
 				8B54DBDD2656587300DFF12E /* ViewController.swift */,
@@ -65,6 +74,17 @@
 				8B54DBE72656587600DFF12E /* Info.plist */,
 			);
 			path = HGRefreshExample;
+			sourceTree = "<group>";
+		};
+		8B54DBED2656594D00DFF12E /* HGRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				8B54DBF02656594D00DFF12E /* UIScrollView+HGRefresh.swift */,
+				8B54DBEE2656594D00DFF12E /* HGRefreshBaseView.swift */,
+				8B54DBF12656594D00DFF12E /* HGRefreshHeaderView.swift */,
+				8B54DBEF2656594D00DFF12E /* HGRefreshFooterView.swift */,
+			);
+			path = HGRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B54DBDE2656587300DFF12E /* ViewController.swift in Sources */,
+				8B54DBF52656594D00DFF12E /* UIScrollView+HGRefresh.swift in Sources */,
+				8B54DBF42656594D00DFF12E /* HGRefreshFooterView.swift in Sources */,
+				8B54DBF32656594D00DFF12E /* HGRefreshBaseView.swift in Sources */,
+				8B54DBF62656594D00DFF12E /* HGRefreshHeaderView.swift in Sources */,
 				8B54DBDA2656587300DFF12E /* AppDelegate.swift in Sources */,
 				8B54DBDC2656587300DFF12E /* SceneDelegate.swift in Sources */,
 			);
@@ -292,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baogh.HGRefreshExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bao.HGRefreshExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +334,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baogh.HGRefreshExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bao.HGRefreshExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
