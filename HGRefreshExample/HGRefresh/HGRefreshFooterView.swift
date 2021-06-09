@@ -9,7 +9,7 @@ import UIKit
 
 class HGRefreshFooterView: HGRefreshBaseView {
     
-    override var state: RefreshState {
+    override var state: HGRefreshState {
         didSet {
             switch state {
             case .normal:

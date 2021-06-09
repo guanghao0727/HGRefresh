@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum RefreshState {
+enum HGRefreshState {
     case normal
     case pulling
     case refreshing
@@ -20,7 +20,7 @@ typealias RefreshViewBlock = () -> ()
 class HGRefreshBaseView: UIView {
     
     var refreshBlock: RefreshViewBlock?
-    var state: RefreshState = .normal
+    var state: HGRefreshState = .normal
     private(set) var lastContentInset: UIEdgeInsets!
     private var contentOffsetObserve: NSKeyValueObservation?
     private var contentSizeObserve: NSKeyValueObservation?
