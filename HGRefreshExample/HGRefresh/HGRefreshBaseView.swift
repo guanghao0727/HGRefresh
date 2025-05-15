@@ -58,6 +58,7 @@ class HGRefreshBaseView: UIView {
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         
+        self.layoutIfNeeded()
         if let newSuperview = superview, newSuperview.isKind(of: UIScrollView.self) {
             scrollView = newSuperview as? UIScrollView
             didMoveToSuperview(scrollView)

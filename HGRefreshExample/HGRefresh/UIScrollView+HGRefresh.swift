@@ -10,8 +10,8 @@ import UIKit
 extension UIScrollView {
     
     private struct AssociatedKey {
-        static var refreshHeader: HGRefreshHeaderView!
-        static var refreshFooter: HGRefreshFooterView!
+        static var refreshHeader: UInt8!
+        static var refreshFooter: UInt8!
     }
     
     var setRefreshHeader: HGRefreshHeaderView? {
